@@ -1,0 +1,60 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "types": [
+      "@dcloudio/types",
+      "@uni-helper/uni-app-types",
+      "pinia-plugin-persist-uni",
+      "uview-plus/types",
+      //      微信小程序
+      "miniprogram-api-typings",
+      //      支付宝小程序
+      "@mini-types/alipay",
+      //      字节小程序
+      "@douyin-microapp/typings",
+      //      快手小程序
+      "ks-miniprogram-types/global",
+      //      百度小程序
+      "@types/baidu-app"
+    ]
+  },
+  "vueCompilerOptions": {
+    "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+
+    "./auto-imports.d.ts",
+    "./uni-pages.d.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "unpackage"
+  ]
+}

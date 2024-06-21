@@ -1,0 +1,41 @@
+{
+  "easycom": {
+    "custom": {
+      "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "type": "home",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/hi",
+      "type": "page",
+      "layout": "home"
+    },
+    {
+      "path": "pages/unocss/index",
+      "type": "page"
+    },
+    {
+      "path": "pages/uview-plus/index",
+      "type": "page"
+    }
+  ],
+  "globalStyle": {
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "vitesse-uniapp-vue3",
+    "app-plus": {
+      "titleNView": false
+    }
+  },
+  "subPackages": []
+}
